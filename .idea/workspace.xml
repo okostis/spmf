@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/AlgoCosineDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,7 +36,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MainTestCosineDistance.executor": "Run",
+    "Application.MainTestEuclidianDistance.executor": "Run",
     "Application.MainTestFirstOrderDifferencing.executor": "Run",
+    "Application.MainTestJaccardDistance.executor": "Run",
     "Application.MainTestManhattanDistance.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -45,7 +58,20 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTestEuclidianDistance">
+  <component name="RunManager" selected="Application.MainTestCosineDistance">
+    <configuration name="MainTestCosineDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.MainTestCosineDistance" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTestEuclidianDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance.MainTestEuclidianDistance" />
       <module name="untitled" />
@@ -72,6 +98,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTestJaccardDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.JaccardDistance.MainTestJaccardDistance" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.JaccardDistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTestManhattanDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.ManhattanDistance.MainTestManhattanDistance" />
       <module name="untitled" />
@@ -87,7 +126,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTestCosineDistance" />
         <item itemvalue="Application.MainTestEuclidianDistance" />
+        <item itemvalue="Application.MainTestJaccardDistance" />
         <item itemvalue="Application.MainTestManhattanDistance" />
         <item itemvalue="Application.MainTestFirstOrderDifferencing" />
       </list>
@@ -101,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746167668078</updated>
-      <workItem from="1746167669136" duration="1106000" />
+      <workItem from="1746167669136" duration="2122000" />
     </task>
     <servers />
   </component>

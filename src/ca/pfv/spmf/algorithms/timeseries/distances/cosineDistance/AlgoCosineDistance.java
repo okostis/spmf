@@ -1,29 +1,29 @@
-package ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance;
+package ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance;
 
-import ca.pfv.spmf.algorithms.clustering.distanceFunctions.DistanceEuclidian;
+import ca.pfv.spmf.algorithms.clustering.distanceFunctions.DistanceCosine;
 import ca.pfv.spmf.algorithms.timeseries.TimeSeries;
 import ca.pfv.spmf.tools.MemoryLogger;
 
 import java.io.IOException;
 
-public class AlgoEuclidianDistance {
+public class AlgoCosineDistance {
 
     /** the time the algorithm started */
     long startTimestamp = 0;
     /** the time the algorithm terminated */
     long endTimestamp = 0;
 
-    DistanceEuclidian _distanceFunction;
-    public AlgoEuclidianDistance() {
-        _distanceFunction = new DistanceEuclidian();
+    DistanceCosine _distanceFunction;
+    public AlgoCosineDistance() {
+        _distanceFunction = new DistanceCosine();
     }
 
 
     /**
-     * Calculate the Euclidian distance between two time series.
+     * Calculate the Cosine distance between two time series.
      * @param timeSeries1 the first time series
      * @param timeSeries2 the second time series
-     * @return the Euclidian distance
+     * @return the Cosine distance
      */
 
 
