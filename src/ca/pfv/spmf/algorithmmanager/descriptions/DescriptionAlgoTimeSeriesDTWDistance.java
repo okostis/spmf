@@ -9,7 +9,7 @@ import ca.pfv.spmf.algorithms.timeseries.reader_writer.AlgoTimeSeriesReader;
 
 import java.util.List;
 
-public class DescriptionAlgoDTWDistance extends DescriptionOfAlgorithm {
+public class DescriptionAlgoTimeSeriesDTWDistance extends DescriptionOfAlgorithm {
 
     @Override
     public String getImplementationAuthorNames() {
