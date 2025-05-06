@@ -36,6 +36,8 @@ public class AlgoManhattanDistance {
 
 
         double result = _distanceFunction.calculateDistance(timeSeries1, timeSeries2);
+
+        endTimestamp = System.currentTimeMillis();
         return  result;
     }
 

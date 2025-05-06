@@ -4,13 +4,12 @@ import ca.pfv.spmf.algorithmmanager.AlgorithmType;
 import ca.pfv.spmf.algorithmmanager.DescriptionOfAlgorithm;
 import ca.pfv.spmf.algorithmmanager.DescriptionOfParameter;
 import ca.pfv.spmf.algorithms.timeseries.TimeSeries;
-import ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance.AlgoEuclidianDistance;
 import ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.AlgoCosineDistance;
 import ca.pfv.spmf.algorithms.timeseries.reader_writer.AlgoTimeSeriesReader;
 
 import java.util.List;
 
-public class DescriptionAlgoTimeSeriesCosineDifference extends DescriptionOfAlgorithm {
+public class DescriptionAlgoTimeSeriesCosineDistance extends DescriptionOfAlgorithm {
 
     @Override
     public String getImplementationAuthorNames() {
