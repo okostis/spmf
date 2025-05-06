@@ -12,6 +12,7 @@ public class AlgoLCSSDistance extends MatrixBasedDistanceMeasure {
      * Calculate the LCSS distance between two time series.
      * @param timeSeries1 the first time series
      * @param timeSeries2 the second time series
+     * @param limit the limit for the distance
      * @return the LCSS distance
      */
 
