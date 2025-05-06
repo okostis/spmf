@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEDPDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/AlgoERPDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/AlgoERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/AlgoERPDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746167668078</updated>
       <workItem from="1746167669136" duration="29787000" />
-      <workItem from="1746505547129" duration="6514000" />
+      <workItem from="1746505547129" duration="7903000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -185,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746508232285</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Addign ERPDistance and some minor fixes">
+      <option name="closed" value="true" />
+      <created>1746556454904</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746556454904</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +202,8 @@
     <MESSAGE value="Adding Descriptions of ManhattanDistance,EuclidianDistance and DTWDistance" />
     <MESSAGE value="Addign Description for Cosine Distance and renaming description for DTW Distance" />
     <MESSAGE value="Addign LCSSDistance and some minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Addign LCSSDistance and some minor fixes" />
+    <MESSAGE value="Addign ERPDistance and some minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addign ERPDistance and some minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

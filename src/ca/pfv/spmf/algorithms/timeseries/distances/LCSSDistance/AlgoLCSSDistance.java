@@ -174,17 +174,7 @@ public class AlgoLCSSDistance extends MatrixBasedDistanceMeasure {
         return Double.NEGATIVE_INFINITY; // LCSS maximises the subsequence count, so fill cost matrix with neg inf to begin with
     }
 
-//    @Override
-//    public ParamSet getParams() {
-//        return super.getParams().add(WINDOW_FLAG, window).add(EPSILON_FLAG, epsilon);
-//    }
 
-//    @Override
-//    public void setParams(final ParamSet param) throws Exception {
-//        super.setParams(param);
-//        setEpsilon(param.get(EPSILON_FLAG, getEpsilon()));
-//        setWindow(param.get(WINDOW_FLAG, getWindow()));
-//    }
 
     public double getWindow() {
         return window;

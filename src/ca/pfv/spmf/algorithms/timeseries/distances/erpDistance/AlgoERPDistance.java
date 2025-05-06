@@ -160,18 +160,6 @@ public class AlgoERPDistance extends MatrixBasedDistanceMeasure {
         return distance;
     }
 
-//    @Override
-//    public ParamSet getParams() {
-//        return super.getParams().add(DTW.WINDOW_FLAG, window).add(G_FLAG, g);
-//    }
-
-//    @Override
-//    public void setParams(final ParamSet param) throws Exception {
-//        super.setParams(param);
-//        setG(param.get(G_FLAG, getG()));
-//        setWindow(param.get(WINDOW_FLAG, getWindow()));
-//    }
-
     public double getWindow() {
         return window;
     }
