@@ -6,6 +6,10 @@ import ca.pfv.spmf.tools.MemoryLogger;
 
 import java.util.Arrays;
 
+/**
+ *  ported from UEA Time Series Classification repository
+ */
+
 public class AlgoLCSSDistance extends MatrixBasedDistanceMeasure {
 
     /**
