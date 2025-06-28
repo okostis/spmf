@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="github.cschabl.cdi.unit.junit5" type="repository">
+    <properties maven-id="com.github.cschabl.cdi-unit-junit5:cdi-unit-junit5:1.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/cschabl/cdi-unit-junit5/cdi-unit-junit5/1.0/cdi-unit-junit5-1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.10.3/junit-jupiter-api-5.10.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.10.3/junit-platform-commons-1.10.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

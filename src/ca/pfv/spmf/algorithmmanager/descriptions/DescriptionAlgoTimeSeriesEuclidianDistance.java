@@ -5,7 +5,6 @@ import ca.pfv.spmf.algorithmmanager.DescriptionOfAlgorithm;
 import ca.pfv.spmf.algorithmmanager.DescriptionOfParameter;
 import ca.pfv.spmf.algorithms.timeseries.TimeSeries;
 import ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance.AlgoEuclidianDistance;
-import ca.pfv.spmf.algorithms.timeseries.distances.ManhattanDistance.AlgoManhattanDistance;
 import ca.pfv.spmf.algorithms.timeseries.reader_writer.AlgoTimeSeriesReader;
 
 import java.util.List;
