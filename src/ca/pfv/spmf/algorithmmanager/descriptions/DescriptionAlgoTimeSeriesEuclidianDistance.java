@@ -51,7 +51,7 @@ public class DescriptionAlgoTimeSeriesEuclidianDistance extends DescriptionOfAlg
 
     @Override
     public DescriptionOfParameter[] getParametersDescription() {
-        DescriptionOfParameter[] parameters = new DescriptionOfParameter[2];
+        DescriptionOfParameter[] parameters = new DescriptionOfParameter[1];
         parameters[0] = new DescriptionOfParameter("seperator ", "(e.g. ',')", String.class, false);
 
         return parameters;

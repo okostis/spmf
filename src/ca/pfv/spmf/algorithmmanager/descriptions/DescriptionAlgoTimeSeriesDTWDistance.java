@@ -38,9 +38,9 @@ public class DescriptionAlgoTimeSeriesDTWDistance extends DescriptionOfAlgorithm
 
     @Override
     public void runAlgorithm(String[] parameters, String inputFile, String outputFile) throws Exception {
-            double limit = getParamAsDouble(parameters[0]);
+            double limit = getParamAsDouble(parameters[2]);
             float window = getParamAsFloat(parameters[1]);
-            String separator = parameters[2];
+            String separator = parameters[0];
             AlgoTimeSeriesReader reader = new AlgoTimeSeriesReader();
             List<TimeSeries> multipleTimeSeries = reader.runAlgorithm(inputFile, separator);
 

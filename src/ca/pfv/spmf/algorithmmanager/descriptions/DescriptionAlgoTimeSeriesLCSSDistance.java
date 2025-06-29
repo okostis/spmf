@@ -39,11 +39,11 @@ public class DescriptionAlgoTimeSeriesLCSSDistance extends DescriptionOfAlgorith
 
     @Override
     public void runAlgorithm(String[] parameters, String inputFile, String outputFile) throws Exception {
-        double limit = getParamAsDouble(parameters[0]);
+        double limit = getParamAsDouble(parameters[2]);
         float window = getParamAsFloat(parameters[1]);
         double epsilon = getParamAsDouble(parameters[3]);
 
-        String separator = parameters[2];
+        String separator = parameters[0];
         AlgoTimeSeriesReader reader = new AlgoTimeSeriesReader();
         List<TimeSeries> multipleTimeSeries = reader.runAlgorithm(inputFile, separator);
 
@@ -57,7 +57,7 @@ public class DescriptionAlgoTimeSeriesLCSSDistance extends DescriptionOfAlgorith
 
     @Override
     public DescriptionOfParameter[] getParametersDescription() {
-        DescriptionOfParameter[] parameters = new DescriptionOfParameter[3];
+        DescriptionOfParameter[] parameters = new DescriptionOfParameter[4];
         parameters[0] = new DescriptionOfParameter("seperator ", "(e.g. ',')", String.class, false);
         parameters[1] = new DescriptionOfParameter("window (%)", "(e.g. 0.2)", Double.class, false);
         parameters[2] = new DescriptionOfParameter("limit", "(e.g. 0.2 (0-1))", Double.class, false);
