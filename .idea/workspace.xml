@@ -2,29 +2,33 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="untitled:jar2" />
+      <artifact name="untitled:jar3" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding JUnit tests for the algorithms we added">
+    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistanceFileToFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistanceFileToFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/MainTestLCSSDistanceFileToFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/MainTestManhattanDistanceFileToFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistanceFileToFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistanceFileToFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/untitled_jar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/untitled_jar2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesCosineDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEDPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesERPDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesERPDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesManhattanDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "Application.MainTestAlgorithmManager.executor": "Run",
     "Application.MainTestCosineDistance.executor": "Run",
     "Application.MainTestDTWDistance.executor": "Run",
@@ -96,6 +100,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\test" />
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
@@ -188,7 +193,10 @@
       <workItem from="1747890684868" duration="12939000" />
       <workItem from="1750865438874" duration="28000" />
       <workItem from="1751109795690" duration="19469000" />
-      <workItem from="1751173105363" duration="12719000" />
+      <workItem from="1751173105363" duration="15449000" />
+      <workItem from="1751691336049" duration="5360000" />
+      <workItem from="1751711378197" duration="2334000" />
+      <workItem from="1751717529632" duration="4818000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -254,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751142922505</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="minor fixes on DescriptionAlgo classes">
+      <option name="closed" value="true" />
+      <created>1751210503323</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751210503324</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +286,8 @@
     <MESSAGE value="added kind credits disclaimer" />
     <MESSAGE value="adding JUnit" />
     <MESSAGE value="adding JUnit tests for the algorithms we added" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding JUnit tests for the algorithms we added" />
+    <MESSAGE value="minor fixes on DescriptionAlgo classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes on DescriptionAlgo classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -304,6 +321,51 @@
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/reader_writer/AlgoTimeSeriesReader.java</url>
           <line>74</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java</url>

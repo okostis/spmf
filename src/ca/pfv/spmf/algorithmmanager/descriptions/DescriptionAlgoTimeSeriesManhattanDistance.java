@@ -19,7 +19,7 @@ public class DescriptionAlgoTimeSeriesManhattanDistance  extends DescriptionOfAl
 
     @Override
     public String getName() {
-        return "Manhattan Distance";
+        return "Manhattan_Distance";
     }
 
     @Override

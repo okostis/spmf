@@ -19,7 +19,7 @@ public class DescriptionAlgoTimeSeriesERPDistance extends DescriptionOfAlgorithm
 
     @Override
     public String getName() {
-        return "EDPistance";
+        return "ERP_Distance";
     }
 
     @Override

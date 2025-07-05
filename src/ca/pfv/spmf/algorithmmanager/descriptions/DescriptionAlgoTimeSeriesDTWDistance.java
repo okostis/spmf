@@ -18,7 +18,7 @@ public class DescriptionAlgoTimeSeriesDTWDistance extends DescriptionOfAlgorithm
 
     @Override
     public String getName() {
-        return "DTWDistance";
+        return "DTW_Distance";
     }
 
     @Override

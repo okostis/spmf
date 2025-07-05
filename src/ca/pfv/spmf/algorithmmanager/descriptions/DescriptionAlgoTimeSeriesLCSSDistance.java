@@ -19,7 +19,7 @@ public class DescriptionAlgoTimeSeriesLCSSDistance extends DescriptionOfAlgorith
 
     @Override
     public String getName() {
-        return "LCSSistance";
+        return "LCSS_Distance";
     }
 
     @Override

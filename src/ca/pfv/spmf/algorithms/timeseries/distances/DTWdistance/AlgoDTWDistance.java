@@ -139,6 +139,7 @@ public class AlgoDTWDistance extends MatrixBasedDistanceMeasure {
 
         // last value in the current row is the distance
         final double distance = row[row.length - 1];
+        endTimestamp = System.currentTimeMillis();
         teardown();
         return distance;
 

@@ -18,7 +18,7 @@ public class DescriptionAlgoTimeSeriesCosineDistance extends DescriptionOfAlgori
 
     @Override
     public String getName() {
-        return "Cosine Distance";
+        return "Cosine_Distance";
     }
 
     @Override

@@ -38,6 +38,7 @@ public class AlgoEuclidianDistance {
         double result = _distanceFunction.calculateDistance(timeSeries1, timeSeries2);
 
         endTimestamp = System.currentTimeMillis();
+
         return  result;
     }
 

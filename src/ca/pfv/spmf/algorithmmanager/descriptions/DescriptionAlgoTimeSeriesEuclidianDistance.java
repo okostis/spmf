@@ -18,7 +18,7 @@ public class DescriptionAlgoTimeSeriesEuclidianDistance extends DescriptionOfAlg
 
     @Override
     public String getName() {
-        return "Euclidian Distance";
+        return "Euclidian_Distance";
     }
 
     @Override
