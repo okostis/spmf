@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="untitled:jar3" />
+      <artifact name="untitled:jar2" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,16 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/untitled_jar2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/untitled_jar2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesCosineDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java" afterDir="false" />
@@ -27,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesManhattanDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,24 +35,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;okostis&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/okostis/spmf&quot;,
+    &quot;accountId&quot;: &quot;decda5c6-357e-46e7-b8ae-a5ae50ef560c&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2wWqR3xIIHp48GRhPqykfSGuyaC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.MainTestAlgorithmManager.executor": "Run",
     "Application.MainTestCosineDistance.executor": "Run",
     "Application.MainTestDTWDistance.executor": "Run",
     "Application.MainTestERPDistance.executor": "Run",
     "Application.MainTestEuclidianDistance.executor": "Run",
-    "Application.MainTestEuclidianDistanceFileToFile.executor": "Debug",
+    "Application.MainTestEuclidianDistanceFileToFile.executor": "Run",
     "Application.MainTestFirstOrderDifferencing.executor": "Run",
     "Application.MainTestFirstOrderDifferencingFileToFile.executor": "Debug",
     "Application.MainTestJaccardDistance.executor": "Run",
@@ -71,6 +71,7 @@
     "Application.MainTestManhattanDistance.executor": "Debug",
     "Application.MainTestMedianSmoothingFromFileToFile.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JAR Application.untitled.jar.executor": "Run",
     "JUnit.AlgoCosineDistanceTest.executor": "Run",
     "JUnit.AlgoDTWDistanceTest.executor": "Run",
     "JUnit.AlgoERPDistanceTest.testKnownDistance.executor": "Run",
@@ -82,11 +83,14 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Kostis Evangelou/Downloads/tsml-java-master/tsml-java-master",
+    "last_opened_file_path": "C:/Users/Aristea/IdeaProjects/spmf/src/ca/pfv/spmf/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,16 +99,20 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aristea\IdeaProjects\spmf\src\ca\pfv\spmf\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\test" />
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JAR Application.untitled.jar">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.gui.Main" />
       <module name="untitled" />
@@ -157,28 +165,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestFirstOrderDifferencingFileToFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.differencing.MainTestFirstOrderDifferencingFileToFile" />
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.differencing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="untitled.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/src/ca/pfv/spmf/test/untitled.jar" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.untitled.jar" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MainTestAlgorithmManager" />
-        <item itemvalue="Application.MainTestEuclidianDistanceFileToFile" />
-        <item itemvalue="Application.MainTestFirstOrderDifferencingFileToFile" />
         <item itemvalue="Application.MainTestEuclidianDistance" />
+        <item itemvalue="Application.MainTestEuclidianDistanceFileToFile" />
+        <item itemvalue="Application.MainTestAlgorithmManager" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -197,6 +204,8 @@
       <workItem from="1751691336049" duration="5360000" />
       <workItem from="1751711378197" duration="2334000" />
       <workItem from="1751717529632" duration="4818000" />
+      <workItem from="1754042883231" duration="27805000" />
+      <workItem from="1754308268826" duration="26762000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -356,11 +365,6 @@
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java</url>
           <line>41</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java</url>

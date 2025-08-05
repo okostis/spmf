@@ -50,9 +50,19 @@ public class DescriptionAlgoTimeSeriesLCSSDistance extends DescriptionOfAlgorith
         AlgoLCSSDistance algorithm = new AlgoLCSSDistance();
         algorithm.setWindow(window);
         algorithm.setEpsilon(epsilon);
-        double distance = algorithm.runAlgorithm(multipleTimeSeries.get(0), multipleTimeSeries.get(1), limit);
-        System.out.println("LCSS distance: " + distance);
-        algorithm.printStats();
+
+        long endTimestamp = 0;
+        long startTimestamp = System.currentTimeMillis();
+        for (int i = 0; i < multipleTimeSeries.size(); i++) {
+            for (int j = i + 1; j < multipleTimeSeries.size(); j++) {
+                double distance = algorithm.runAlgorithm(multipleTimeSeries.get(i), multipleTimeSeries.get(j), limit);
+                System.out.println("LCSS distance: " + distance);
+                algorithm.printStats();
+            }
+        }
+        endTimestamp = System.currentTimeMillis();
+        System.out.println(" Total time for " + multipleTimeSeries.size() + "timeseries: " + (endTimestamp - startTimestamp) + " ms");
+
     }
 
     @Override

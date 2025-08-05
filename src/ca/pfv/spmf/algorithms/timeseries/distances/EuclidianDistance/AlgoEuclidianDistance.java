@@ -30,9 +30,9 @@ public class AlgoEuclidianDistance {
     public double runAlgorithm(TimeSeries timeSeries1, TimeSeries timeSeries2) throws IOException {
 
         startTimestamp = System.currentTimeMillis();
-        if (timeSeries1.size() != timeSeries2.size()) {
-            throw new IllegalArgumentException("The two time series must have the same size.");
-        }
+//        if (timeSeries1.size() != timeSeries2.size()) {
+//            throw new IllegalArgumentException("The two time series must have the same size.");
+//        }
 
 
         double result = _distanceFunction.calculateDistance(timeSeries1, timeSeries2);

@@ -38,17 +38,26 @@ public class DescriptionAlgoTimeSeriesDTWDistance extends DescriptionOfAlgorithm
 
     @Override
     public void runAlgorithm(String[] parameters, String inputFile, String outputFile) throws Exception {
-            double limit = getParamAsDouble(parameters[2]);
-            float window = getParamAsFloat(parameters[1]);
-            String separator = parameters[0];
-            AlgoTimeSeriesReader reader = new AlgoTimeSeriesReader();
-            List<TimeSeries> multipleTimeSeries = reader.runAlgorithm(inputFile, separator);
+        double limit = getParamAsDouble(parameters[2]);
+        float window = getParamAsFloat(parameters[1]);
+        String separator = parameters[0];
+        AlgoTimeSeriesReader reader = new AlgoTimeSeriesReader();
+        List<TimeSeries> multipleTimeSeries = reader.runAlgorithm(inputFile, separator);
 
-            AlgoDTWDistance algorithm = new AlgoDTWDistance();
-            //algorithm.setWindow(window);
-            double distance = algorithm.runAlgorithm(multipleTimeSeries.get(0), multipleTimeSeries.get(1), limit);
-            System.out.println("DTW distance: " + distance);
-            algorithm.printStats();
+        AlgoDTWDistance algorithm = new AlgoDTWDistance();
+        //algorithm.setWindow(window);
+
+        long endTimestamp = 0;
+        long startTimestamp = System.currentTimeMillis();
+        for (int i = 0; i < multipleTimeSeries.size(); i++) {
+            for (int j = i + 1; j < multipleTimeSeries.size(); j++) {
+                double distance = algorithm.runAlgorithm(multipleTimeSeries.get(i), multipleTimeSeries.get(j), limit);
+                System.out.println("DTW distance: " + distance);
+                algorithm.printStats();
+            }
+        }
+        endTimestamp = System.currentTimeMillis();
+        System.out.println(" Total time for " + multipleTimeSeries.size() + "timeseries: " + (endTimestamp - startTimestamp) + " ms");
     }
 
     @Override

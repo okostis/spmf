@@ -49,9 +49,19 @@ public class DescriptionAlgoTimeSeriesERPDistance extends DescriptionOfAlgorithm
         AlgoERPDistance algorithm = new AlgoERPDistance();
         algorithm.setG(gap);
         //algorithm.setWindow(window);
-        double distance = algorithm.runAlgorithm(multipleTimeSeries.get(0), multipleTimeSeries.get(1), limit);
-        System.out.println("EDP distance: " + distance);
-        algorithm.printStats();
+
+        long endTimestamp = 0;
+        long startTimestamp = System.currentTimeMillis();
+        for (int i = 0; i < multipleTimeSeries.size(); i++) {
+            for (int j = i + 1; j < multipleTimeSeries.size(); j++) {
+                double distance = algorithm.runAlgorithm(multipleTimeSeries.get(i), multipleTimeSeries.get(j), limit);
+                System.out.println("EDP distance: " + distance);
+                algorithm.printStats();
+            }
+        }
+        endTimestamp = System.currentTimeMillis();
+        System.out.println(" Total time for " + multipleTimeSeries.size() + "timeseries: " + (endTimestamp - startTimestamp) + " ms");
+
     }
 
     @Override
