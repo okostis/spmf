@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class MainTestManhattanDistance {
 
-    public static void main(String [] arg) throws IOException {
+    public static void main(String [] arg) throws Exception {
 
         // the smoothing constant (a double representing a percentage between 0 and 1)
         double alpha = 1;

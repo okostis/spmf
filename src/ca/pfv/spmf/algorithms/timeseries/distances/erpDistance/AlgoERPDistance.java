@@ -4,6 +4,7 @@ import ca.pfv.spmf.algorithms.timeseries.TimeSeries;
 import ca.pfv.spmf.algorithms.timeseries.distances.MatrixBasedDistanceMeasure;
 import ca.pfv.spmf.tools.MemoryLogger;
 
+import java.security.InvalidAlgorithmParameterException;
 import java.util.Arrays;
 
 /**
@@ -63,8 +64,14 @@ public class AlgoERPDistance extends MatrixBasedDistanceMeasure {
     }
 
 
-    public double runAlgorithm(TimeSeries a, TimeSeries b, final double limit) {
+    public double runAlgorithm(TimeSeries a, TimeSeries b, final double limit) throws Exception{
         startTimestamp = System.currentTimeMillis();
+        if(a == null || b == null) {
+            throw new Exception("TimeSeries cannot be null");
+        }
+        if(a.data.length == 0 || b.data.length == 0) {
+            throw  new InvalidAlgorithmParameterException("TimeSeries cannot be empty");
+        }
 
 
         // make a the longest time series

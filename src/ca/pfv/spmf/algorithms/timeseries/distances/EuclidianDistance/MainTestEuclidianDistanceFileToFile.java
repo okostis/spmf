@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainTestEuclidianDistanceFileToFile {
-    public static void main(String [] arg) throws IOException {
+    public static void main(String [] arg) throws Exception {
 
         // the input file
         String input = fileToPath("contextMovingAverage.txt");

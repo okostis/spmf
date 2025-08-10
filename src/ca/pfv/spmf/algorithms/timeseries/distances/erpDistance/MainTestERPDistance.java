@@ -9,7 +9,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 
 public class MainTestERPDistance  {
-    public static void main(String [] arg) throws IOException {
+    public static void main(String [] arg) throws Exception {
 
 
 

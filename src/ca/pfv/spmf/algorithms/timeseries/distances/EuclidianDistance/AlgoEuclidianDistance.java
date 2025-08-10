@@ -5,6 +5,7 @@ import ca.pfv.spmf.algorithms.timeseries.TimeSeries;
 import ca.pfv.spmf.tools.MemoryLogger;
 
 import java.io.IOException;
+import java.security.InvalidAlgorithmParameterException;
 
 public class AlgoEuclidianDistance {
 
@@ -27,13 +28,18 @@ public class AlgoEuclidianDistance {
      */
 
 
-    public double runAlgorithm(TimeSeries timeSeries1, TimeSeries timeSeries2) throws IOException {
+    public double runAlgorithm(TimeSeries timeSeries1, TimeSeries timeSeries2) throws Exception {
 
         startTimestamp = System.currentTimeMillis();
-//        if (timeSeries1.size() != timeSeries2.size()) {
-//            throw new IllegalArgumentException("The two time series must have the same size.");
-//        }
-
+        if(timeSeries1 == null || timeSeries2 == null) {
+            throw new Exception("TimeSeries cannot be null");
+        }
+        if (timeSeries1.size() != timeSeries2.size()) {
+            throw new IllegalArgumentException("The two time series must have the same size.");
+        }
+        if(timeSeries1.data ==new double[]{} || timeSeries1.data ==new double[]{}) {
+            throw  new InvalidAlgorithmParameterException("TimeSeries cannot be empty");
+        }
 
         double result = _distanceFunction.calculateDistance(timeSeries1, timeSeries2);
 

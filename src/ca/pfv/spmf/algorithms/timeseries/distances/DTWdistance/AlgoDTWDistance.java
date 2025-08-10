@@ -5,6 +5,7 @@ import ca.pfv.spmf.algorithms.timeseries.distances.MatrixBasedDistanceMeasure;
 import ca.pfv.spmf.tools.MemoryLogger;
 
 import java.io.IOException;
+import java.security.InvalidAlgorithmParameterException;
 import java.util.Arrays;
 
 /**
@@ -57,8 +58,15 @@ public class AlgoDTWDistance extends MatrixBasedDistanceMeasure {
 
 
 
-    public double runAlgorithm(TimeSeries timeSeries1, TimeSeries timeSeries2,final double limit) throws IOException {
+    public double runAlgorithm(TimeSeries timeSeries1, TimeSeries timeSeries2,final double limit) throws Exception {
         startTimestamp = System.currentTimeMillis();
+
+        if(timeSeries1 == null || timeSeries2 == null) {
+            throw new  Exception("TimeSeries cannot be null");
+        }
+        if(timeSeries1.data .length == 0 || timeSeries1.data.length == 0) {
+            throw  new InvalidAlgorithmParameterException("TimeSeries cannot be empty");
+        }
 
         if(timeSeries1.size() < timeSeries2.size()) {
 

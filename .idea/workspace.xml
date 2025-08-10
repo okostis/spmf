@@ -9,15 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="">
+    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="Changing descriptionOfAlgorithm files in order to be able to accept multipel TimeSeries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesCosineDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesDTWDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesERPDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLCSSDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesManhattanDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistanceFileToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistanceFileToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/MainTestLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/MainTestLCSSDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/MainTestManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/MainTestManhattanDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/AlgoCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/AlgoCosineDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/AlgoERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/AlgoERPDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/CosineDistance/AlgoCosineDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/CosineDistance/AlgoCosineDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/DTWDistance/AlgoDTWDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/DTWDistance/AlgoDTWDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ERPDistance/AlgoERPDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ERPDistance/AlgoERPDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +59,9 @@
     &quot;accountId&quot;: &quot;decda5c6-357e-46e7-b8ae-a5ae50ef560c&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -73,9 +88,35 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JAR Application.untitled.jar.executor": "Run",
     "JUnit.AlgoCosineDistanceTest.executor": "Run",
+    "JUnit.AlgoCosineDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
+    "JUnit.AlgoCosineDistanceTest.testKnownDistance.executor": "Run",
+    "JUnit.AlgoCosineDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
+    "JUnit.AlgoCosineDistanceTest.testNullTimeSeriesInput.executor": "Run",
+    "JUnit.AlgoCosineDistanceTest.testVerySmallDifferences.executor": "Run",
     "JUnit.AlgoDTWDistanceTest.executor": "Run",
+    "JUnit.AlgoDTWDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
+    "JUnit.AlgoDTWDistanceTest.testKnownDistance.executor": "Run",
+    "JUnit.AlgoDTWDistanceTest.testMaxMinValueDistance.executor": "Run",
+    "JUnit.AlgoDTWDistanceTest.testNullTimeSeriesInput.executor": "Run",
+    "JUnit.AlgoDTWDistanceTest.testVerySmallDifferences.executor": "Run",
+    "JUnit.AlgoERPDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
     "JUnit.AlgoERPDistanceTest.testKnownDistance.executor": "Run",
+    "JUnit.AlgoERPDistanceTest.testVerySmallDifferences.executor": "Run",
+    "JUnit.AlgoEuclidianDistanceTest.executor": "Run",
+    "JUnit.AlgoEuclidianDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
+    "JUnit.AlgoEuclidianDistanceTest.testKnownDistance.executor": "Run",
+    "JUnit.AlgoEuclidianDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
+    "JUnit.AlgoEuclidianDistanceTest.testNegativeValues.executor": "Run",
+    "JUnit.AlgoEuclidianDistanceTest.testVerySmallDifferences.executor": "Run",
     "JUnit.AlgoLCSSDistanceTest.executor": "Run",
+    "JUnit.AlgoLCSSDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
+    "JUnit.AlgoLCSSDistanceTest.testKnownDistance.executor": "Run",
+    "JUnit.AlgoLCSSDistanceTest.testNegativeValues.executor": "Run",
+    "JUnit.AlgoLCSSDistanceTest.testVerySmallDifferences.executor": "Run",
+    "JUnit.AlgoManhattanDistanceTest.executor": "Run",
+    "JUnit.AlgoManhattanDistanceTest.testDistanceSymmetry.executor": "Run",
+    "JUnit.AlgoManhattanDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
+    "JUnit.AlgoManhattanDistanceTest.testVerySmallDifferences.executor": "Run",
     "JUnit.All in untitled.executor": "Run",
     "JUnit.ca.pfv.spmf.algorithms.timeseries.distances.ManhattanDistance in untitled.executor": "Run",
     "Repository.Attach.Annotations": "true",
@@ -85,7 +126,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
@@ -99,7 +139,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -112,70 +152,86 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.untitled.jar">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.gui.Main" />
+  <component name="RunManager" selected="JUnit.All in untitled">
+    <configuration name="AlgoCosineDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.gui.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.CosineDistance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.CosineDistance" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.CosineDistance.AlgoCosineDistanceTest" />
+      <option name="METHOD_NAME" value="testVerySmallDifferences" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestAlgorithmManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithmmanager.MainTestAlgorithmManager" />
+    <configuration name="AlgoDTWDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithmmanager.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWDistance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWDistance" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWDistance.AlgoDTWDistanceTest" />
+      <option name="METHOD_NAME" value="testVerySmallDifferences" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestEuclidianDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance.MainTestEuclidianDistance" />
+    <configuration name="AlgoERPDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.ERPDistance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.ERPDistance" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.ERPDistance.AlgoERPDistanceTest" />
+      <option name="METHOD_NAME" value="testVerySmallDifferences" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestEuclidianDistanceFileToFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance.MainTestEuclidianDistanceFileToFile" />
+    <configuration name="AlgoLCSSDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.EuclidianDistance.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.LCSSDistance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.LCSSDistance" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.LCSSDistance.AlgoLCSSDistanceTest" />
+      <option name="METHOD_NAME" value="testVerySmallDifferences" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="untitled.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/src/ca/pfv/spmf/test/untitled.jar" />
-      <method v="2" />
+    <configuration name="All in untitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.untitled.jar" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MainTestEuclidianDistance" />
-        <item itemvalue="Application.MainTestEuclidianDistanceFileToFile" />
-        <item itemvalue="Application.MainTestAlgorithmManager" />
+        <item itemvalue="JUnit.All in untitled" />
+        <item itemvalue="JUnit.AlgoLCSSDistanceTest.testVerySmallDifferences" />
+        <item itemvalue="JUnit.AlgoERPDistanceTest.testVerySmallDifferences" />
+        <item itemvalue="JUnit.AlgoDTWDistanceTest.testVerySmallDifferences" />
+        <item itemvalue="JUnit.AlgoCosineDistanceTest.testVerySmallDifferences" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +261,8 @@
       <workItem from="1751711378197" duration="2334000" />
       <workItem from="1751717529632" duration="4818000" />
       <workItem from="1754042883231" duration="27805000" />
-      <workItem from="1754308268826" duration="26762000" />
+      <workItem from="1754308268826" duration="33605000" />
+      <workItem from="1754719716290" duration="18927000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -279,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751210503324</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changing descriptionOfAlgorithm files in order to be able to accept multipel TimeSeries">
+      <option name="closed" value="true" />
+      <created>1754408165769</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1754408165770</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,14 +361,15 @@
     <MESSAGE value="adding JUnit" />
     <MESSAGE value="adding JUnit tests for the algorithms we added" />
     <MESSAGE value="minor fixes on DescriptionAlgo classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fixes on DescriptionAlgo classes" />
+    <MESSAGE value="Changing descriptionOfAlgorithm files in order to be able to accept multipel TimeSeries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing descriptionOfAlgorithm files in order to be able to accept multipel TimeSeries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistance.java</url>
-          <line>60</line>
+          <line>61</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -333,27 +399,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java</url>
-          <line>47</line>
+          <line>53</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java</url>
-          <line>41</line>
+          <line>47</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java</url>
-          <line>141</line>
+          <line>149</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java</url>
-          <line>143</line>
+          <line>151</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -368,7 +434,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java</url>
-          <line>62</line>
+          <line>70</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -400,5 +466,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spmf$All_in_untitled.ic" NAME="All in untitled Coverage Results" MODIFIED="1754841480914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
