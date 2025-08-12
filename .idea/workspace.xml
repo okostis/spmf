@@ -9,27 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="Changing descriptionOfAlgorithm files in order to be able to accept multipel TimeSeries">
+    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding more tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/AlgoDTWDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistanceFileToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/MainTestEuclidianDistanceFileToFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/MainTestLCSSDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/MainTestLCSSDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/MainTestManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/MainTestManhattanDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/AlgoCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/AlgoCosineDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/AlgoERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/AlgoERPDistance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/CosineDistance/AlgoCosineDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/CosineDistance/AlgoCosineDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/DTWDistance/AlgoDTWDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/DTWDistance/AlgoDTWDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ERPDistance/AlgoERPDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ERPDistance/AlgoERPDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/CosineDistance/AlgoCosineDistanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/DTWDistance/AlgoDTWDistanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ERPDistance/AlgoERPDistanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/EuclidianDistance/AlgoEuclidianDistanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/LCSSDistance/AlgoLCSSDistanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/AlgoManhattanDistanceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +111,9 @@
     "JUnit.AlgoManhattanDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
     "JUnit.AlgoManhattanDistanceTest.testVerySmallDifferences.executor": "Run",
     "JUnit.All in untitled.executor": "Run",
+    "JUnit.MainTestCosineDistance.testKnownDistance.executor": "Run",
+    "JUnit.MainTestERPDistance.testVerySmallDifferences.executor": "Run",
+    "JUnit.ca.pfv.spmf.algorithms.timeseries.distances in untitled.executor": "Run",
     "JUnit.ca.pfv.spmf.algorithms.timeseries.distances.ManhattanDistance in untitled.executor": "Run",
     "Repository.Attach.Annotations": "true",
     "Repository.Attach.JavaDocs": "false",
@@ -152,55 +148,7 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in untitled">
-    <configuration name="AlgoCosineDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.CosineDistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.CosineDistance" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.CosineDistance.AlgoCosineDistanceTest" />
-      <option name="METHOD_NAME" value="testVerySmallDifferences" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlgoDTWDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWDistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWDistance" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWDistance.AlgoDTWDistanceTest" />
-      <option name="METHOD_NAME" value="testVerySmallDifferences" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlgoERPDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.ERPDistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.ERPDistance" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.ERPDistance.AlgoERPDistanceTest" />
-      <option name="METHOD_NAME" value="testVerySmallDifferences" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ca.pfv.spmf.algorithms.timeseries.distances in untitled">
     <configuration name="AlgoLCSSDistanceTest.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
@@ -225,13 +173,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTestCosineDistance.testKnownDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.MainTestCosineDistance" />
+      <option name="METHOD_NAME" value="testKnownDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTestERPDistance.testVerySmallDifferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.erpDistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.erpDistance" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.erpDistance.MainTestERPDistance" />
+      <option name="METHOD_NAME" value="testVerySmallDifferences" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ca.pfv.spmf.algorithms.timeseries.distances in untitled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ca.pfv.spmf.algorithms.timeseries.distances in untitled" />
+        <item itemvalue="JUnit.MainTestERPDistance.testVerySmallDifferences" />
         <item itemvalue="JUnit.All in untitled" />
+        <item itemvalue="JUnit.MainTestCosineDistance.testKnownDistance" />
         <item itemvalue="JUnit.AlgoLCSSDistanceTest.testVerySmallDifferences" />
-        <item itemvalue="JUnit.AlgoERPDistanceTest.testVerySmallDifferences" />
-        <item itemvalue="JUnit.AlgoDTWDistanceTest.testVerySmallDifferences" />
-        <item itemvalue="JUnit.AlgoCosineDistanceTest.testVerySmallDifferences" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +256,8 @@
       <workItem from="1751717529632" duration="4818000" />
       <workItem from="1754042883231" duration="27805000" />
       <workItem from="1754308268826" duration="33605000" />
-      <workItem from="1754719716290" duration="18927000" />
+      <workItem from="1754719716290" duration="20232000" />
+      <workItem from="1755018484819" duration="3541000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -344,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754408165770</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding more tests">
+      <option name="closed" value="true" />
+      <created>1754848844297</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1754848844297</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +365,8 @@
     <MESSAGE value="adding JUnit tests for the algorithms we added" />
     <MESSAGE value="minor fixes on DescriptionAlgo classes" />
     <MESSAGE value="Changing descriptionOfAlgorithm files in order to be able to accept multipel TimeSeries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changing descriptionOfAlgorithm files in order to be able to accept multipel TimeSeries" />
+    <MESSAGE value="adding more tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding more tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
