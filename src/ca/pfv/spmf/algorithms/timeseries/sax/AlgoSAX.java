@@ -375,7 +375,7 @@ public class AlgoSAX {
 	 * @param numberOfSymbols the number of symbols chosen by the user
 	 * @return an array of breakpoints
 	 */
-	private double[] getBreakpoints(int numberOfSymbols) {
+	public double[] getBreakpoints(int numberOfSymbols) {
 		if(numberOfSymbols < 2 || numberOfSymbols >30){
 			throw new IllegalArgumentException(" This implementation of SAX only support a number of symbols between 2 to 30");
 		}
