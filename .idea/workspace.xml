@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding Polynomial Regression">
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/polynomialregression/MainTestPolynomialRegressionLeastSquare.java" afterDir="false" />
+    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding MainTestPolynomialRegressionLeastSquare">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/polynomialregression/MainTestPolynomialRegressionLeastSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/polynomialregression/MainTestPolynomialRegressionLeastSquare.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,10 +110,17 @@
     "JUnit.All in untitled.executor": "Run",
     "JUnit.MainTestCosineDistance.testKnownDistance.executor": "Run",
     "JUnit.MainTestERPDistance.testVerySmallDifferences.executor": "Run",
+    "JUnit.MainTestPolynomialRegressionLeastSquare.debugLinearFit.executor": "Run",
+    "JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit.executor": "Run",
+    "JUnit.MainTestPolynomialRegressionLeastSquare.testCubicFit.executor": "Run",
     "JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFit.executor": "Run",
     "JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFitWithDegree3.executor": "Run",
     "JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearFit.executor": "Run",
+    "JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearcFit.executor": "Run",
+    "JUnit.MainTestPolynomialRegressionLeastSquare.testNegativeDegree.executor": "Run",
+    "JUnit.MainTestPolynomialRegressionLeastSquare.testQuadr6aticFit.executor": "Run",
     "JUnit.MainTestPolynomialRegressionLeastSquare.testQuadraticFit.executor": "Run",
+    "JUnit.MainTestPolynomialRegressionLeastSquare.testRandomFit.executor": "Run",
     "JUnit.ca.pfv.spmf.algorithms.timeseries.distances in untitled.executor": "Run",
     "JUnit.ca.pfv.spmf.algorithms.timeseries.distances.ManhattanDistance in untitled.executor": "Run",
     "Repository.Attach.Annotations": "true",
@@ -149,21 +156,8 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTestPolynomialRegressionLeastSquare.testQuadraticFit">
-    <configuration name="MainTestPolynomialRegressionLeastSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testLinearFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit">
+    <configuration name="MainTestPolynomialRegressionLeastSquare.testConstantFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -173,13 +167,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testLinearFit" />
+      <option name="METHOD_NAME" value="testConstantFit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testLinearFitWithDegree3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestPolynomialRegressionLeastSquare.testCubicFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -189,13 +183,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testLinearFitWithDegree3" />
+      <option name="METHOD_NAME" value="testCubicFit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testLinnearFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestPolynomialRegressionLeastSquare.testLinnearcFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -205,13 +199,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testLinnearFit" />
+      <option name="METHOD_NAME" value="testLinnearcFit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testQuadraticFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestPolynomialRegressionLeastSquare.testQuadr6aticFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -221,7 +215,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testQuadraticFit" />
+      <option name="METHOD_NAME" value="testQuadr6aticFit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTestPolynomialRegressionLeastSquare.testRandomFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
+      <option name="METHOD_NAME" value="testRandomFit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -229,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testQuadraticFit" />
-        <item itemvalue="Application.MainTestPolynomialRegressionLeastSquare" />
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFitWithDegree3" />
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFit" />
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearFit" />
+        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit" />
+        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testRandomFit" />
+        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testCubicFit" />
+        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearcFit" />
+        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testQuadr6aticFit" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +276,7 @@
       <workItem from="1754308268826" duration="33605000" />
       <workItem from="1754719716290" duration="20232000" />
       <workItem from="1755018484819" duration="11063000" />
-      <workItem from="1755152073829" duration="76135000" />
+      <workItem from="1755152073829" duration="79134000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -380,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755793960467</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adding MainTestPolynomialRegressionLeastSquare">
+      <option name="closed" value="true" />
+      <created>1756050144197</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756050144197</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +420,8 @@
     <MESSAGE value="moving unit tests onto maintest files" />
     <MESSAGE value="adding Extended SAX" />
     <MESSAGE value="adding Polynomial Regression" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Polynomial Regression" />
+    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding MainTestPolynomialRegressionLeastSquare" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

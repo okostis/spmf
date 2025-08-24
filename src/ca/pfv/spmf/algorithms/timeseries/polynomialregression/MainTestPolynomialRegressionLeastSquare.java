@@ -10,6 +10,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URL;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class MainTestPolynomialRegressionLeastSquare {
     public static void main(String [] arg) throws IOException {
@@ -85,6 +86,69 @@ public class MainTestPolynomialRegressionLeastSquare {
         assertEquals(16.0, algo.performPrediction(4), 1e-6);
         assertEquals(64.0, algo.performPrediction(8), 1e-6);
     }
+
+    @Test
+    public void testNegativeDegree(){
+        double[] data = new double[]{0, 1, 4, 9}; // y = x^2
+        TimeSeries ts = new TimeSeries(data, "quadratic");
+
+        AlgoTimeSeriesPolynomialRegressionLeastSquare algo = new AlgoTimeSeriesPolynomialRegressionLeastSquare();
+
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> algo.trainModel(ts, -2)
+        );
+    }
+
+    @Test
+    public void testLinnearcFit() {
+        double[] data = new double[]{0, 1, 2, 3,4,5,6,7}; // y = x
+        TimeSeries ts = new TimeSeries(data, "linear");
+
+        AlgoTimeSeriesPolynomialRegressionLeastSquare algo = new AlgoTimeSeriesPolynomialRegressionLeastSquare();
+        algo.trainModel(ts, 3);
+
+
+        assertEquals(18, algo.performPrediction(18), 1e-6);
+    }
+
+    @Test
+    public void testCubicFit() {
+        double[] data = new double[]{0, 1, 8, 27}; // y= x^3
+        TimeSeries ts = new TimeSeries(data, "linear");
+
+        AlgoTimeSeriesPolynomialRegressionLeastSquare algo = new AlgoTimeSeriesPolynomialRegressionLeastSquare();
+        algo.trainModel(ts, 3);
+
+
+        assertEquals(125, algo.performPrediction(5), 1e-6);
+    }
+
+    @Test
+    public void testPolyonimicFit() {
+        double[] data = new double[]{0, 5, 36, 117,272}; // y= x^2 +4x3
+        TimeSeries ts = new TimeSeries(data, "linear");
+
+        AlgoTimeSeriesPolynomialRegressionLeastSquare algo = new AlgoTimeSeriesPolynomialRegressionLeastSquare();
+        algo.trainModel(ts, 4);
+
+
+        assertEquals(525, algo.performPrediction(5), 1e-6);
+    }
+
+    @Test
+    public void testConstantFit() {
+        double[] data = new double[]{4, 4}; // y= 4
+        TimeSeries ts = new TimeSeries(data, "linear");
+
+        AlgoTimeSeriesPolynomialRegressionLeastSquare algo = new AlgoTimeSeriesPolynomialRegressionLeastSquare();
+        algo.trainModel(ts, 4);
+
+
+        assertEquals(4, algo.performPrediction(5), 1e-6);
+    }
+
+
 
 
 
