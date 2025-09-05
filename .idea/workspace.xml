@@ -10,8 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding MainTestPolynomialRegressionLeastSquare">
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/MainTestAlgoLagAutoCorrelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/polynomialregression/MainTestPolynomialRegressionLeastSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/polynomialregression/MainTestPolynomialRegressionLeastSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/sax/MainTestESAX_SingleTimeSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/sax/MainTestESAX_SingleTimeSeries.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +58,7 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2wWqR3xIIHp48GRhPqykfSGuyaC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,7 +66,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.MainTestAlgoLagAutoCorrelation.executor": "Debug",
     "Application.MainTestAlgorithmManager.executor": "Run",
+    "Application.MainTestAutocorrelation.executor": "Run",
     "Application.MainTestConvertTimeSeriesFileToSequencesWithESAX.executor": "Run",
     "Application.MainTestConvertTimeSeriesFiletoSequenceFileWithSAX.executor": "Run",
     "Application.MainTestCosineDistance.executor": "Run",
@@ -110,6 +123,17 @@
     "JUnit.All in untitled.executor": "Run",
     "JUnit.MainTestCosineDistance.testKnownDistance.executor": "Run",
     "JUnit.MainTestERPDistance.testVerySmallDifferences.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries$SingleTimeSeriesTests.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries$SymbolTests.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testBreakpointsForThreeSymbols.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testBreakpointsForTwoSymbols.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testESAXCorrectness.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testESAXFunctionality.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testKnownSequence.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testRunAlgorithmSimpleCase.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testSimpleESAXWithKnownOutput.executor": "Run",
+    "JUnit.MainTestESAX_SingleTimeSeries.testTwoSymbolsWithEasyData.executor": "Run",
     "JUnit.MainTestPolynomialRegressionLeastSquare.debugLinearFit.executor": "Run",
     "JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit.executor": "Run",
     "JUnit.MainTestPolynomialRegressionLeastSquare.testCubicFit.executor": "Run",
@@ -156,82 +180,72 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit">
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testConstantFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MainTestAlgoLagAutoCorrelation">
+    <configuration name="MainTestAlgoLagAutoCorrelation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testConstantFit" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testCubicFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestAutocorrelation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.MainTestAutocorrelation" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testCubicFit" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testLinnearcFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestESAX_SingleTimeSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax.MainTestESAX_SingleTimeSeries" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.sax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testLinnearcFit" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testQuadr6aticFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestESAX_SingleTimeSeries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.sax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testQuadr6aticFit" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax.MainTestESAX_SingleTimeSeries" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestPolynomialRegressionLeastSquare.testRandomFit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestESAX_SingleTimeSeries.testESAXFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.sax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.polynomialregression.MainTestPolynomialRegressionLeastSquare" />
-      <option name="METHOD_NAME" value="testRandomFit" />
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax.MainTestESAX_SingleTimeSeries" />
+      <option name="METHOD_NAME" value="testESAXFunctionality" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -239,21 +253,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit" />
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testRandomFit" />
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testCubicFit" />
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearcFit" />
-        <item itemvalue="JUnit.MainTestPolynomialRegressionLeastSquare.testQuadr6aticFit" />
+        <item itemvalue="Application.MainTestAlgoLagAutoCorrelation" />
+        <item itemvalue="Application.MainTestAutocorrelation" />
+        <item itemvalue="JUnit.MainTestESAX_SingleTimeSeries.testESAXFunctionality" />
+        <item itemvalue="JUnit.MainTestESAX_SingleTimeSeries" />
+        <item itemvalue="Application.MainTestESAX_SingleTimeSeries" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -277,6 +283,8 @@
       <workItem from="1754719716290" duration="20232000" />
       <workItem from="1755018484819" duration="11063000" />
       <workItem from="1755152073829" duration="79134000" />
+      <workItem from="1756967735538" duration="9551000" />
+      <workItem from="1757051872232" duration="17365000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -521,6 +529,26 @@
           <line>79</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java</url>
           <line>39</line>
@@ -552,6 +580,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$MainTestESAX_SingleTimeSeries.ic" NAME="MainTestESAX_SingleTimeSeries Coverage Results" MODIFIED="1757002389639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ca.pfv.spmf.algorithms.timeseries.sax.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/spmf$All_in_untitled.ic" NAME="All in untitled Coverage Results" MODIFIED="1754841480914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
