@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding MainTestPolynomialRegressionLeastSquare">
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesCorrelogramModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
@@ -300,7 +300,7 @@
       <workItem from="1755152073829" duration="79134000" />
       <workItem from="1756967735538" duration="9551000" />
       <workItem from="1757051872232" duration="20264000" />
-      <workItem from="1757140798550" duration="16626000" />
+      <workItem from="1757140798550" duration="18223000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -454,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757159030031</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="adding DescriptionAlgoTimeSeriesCorrelogramModule in order to be able to invoke our Correlogram">
+      <option name="closed" value="true" />
+      <created>1757171884287</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1757171884287</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,9 +487,10 @@
     <MESSAGE value="adding test for ESAX and PACF" />
     <MESSAGE value="adding ConfidenceBand implementation" />
     <MESSAGE value="adding CorrelogramModule" />
-    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
     <MESSAGE value="adding tests for Correlogram + implementation of ConfidenceBand" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding tests for Correlogram + implementation of ConfidenceBand" />
+    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
+    <MESSAGE value="adding DescriptionAlgoTimeSeriesCorrelogramModule in order to be able to invoke our Correlogram" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding DescriptionAlgoTimeSeriesCorrelogramModule in order to be able to invoke our Correlogram" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
