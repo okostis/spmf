@@ -10,9 +10,7 @@ public class MainTestCorrelogramModule {
     public static void main(String[] args) throws IOException {
         // Create a sample time series (e.g., with 150 data points)
         double[] data = new double[]{3.0,2.0,8.0,9.0,8.0,9.0,8.0,7.0,6.0,7.0,5.0,4.0,2.0,7.0,9.0,8.0,5.0};
-        for(int i=0; i<data.length; i++){
-            data[i] = Math.random(); // Using random data for demonstration
-        }
+
         TimeSeries ts = new TimeSeries(data, "Sample Random TS");
 
         AlgoCorrelogramModule correlogram = new AlgoCorrelogramModule();

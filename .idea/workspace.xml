@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding MainTestPolynomialRegressionLeastSquare">
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/correlogramModule/MainTestCorrelogramModule.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
@@ -20,7 +19,9 @@
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/correlogramModule/AlgoCorrelogramModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/correlogramModule/AlgoCorrelogramModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/confidenceband/MainTestConfidenceBand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/confidenceband/MainTestConfidenceBand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/correlogramModule/MainTestCorrelogramModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/correlogramModule/MainTestCorrelogramModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/MainTestAlgoLagAutoCorrelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/MainTestAlgoLagAutoCorrelation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +72,7 @@
     "Application.MainTestConfidenceBand.executor": "Run",
     "Application.MainTestConvertTimeSeriesFileToSequencesWithESAX.executor": "Run",
     "Application.MainTestConvertTimeSeriesFiletoSequenceFileWithSAX.executor": "Run",
+    "Application.MainTestCorrelogramModule.executor": "Run",
     "Application.MainTestCosineDistance.executor": "Run",
     "Application.MainTestDTWDistance.executor": "Run",
     "Application.MainTestERPDistance.executor": "Run",
@@ -121,6 +123,12 @@
     "JUnit.AlgoManhattanDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
     "JUnit.AlgoManhattanDistanceTest.testVerySmallDifferences.executor": "Run",
     "JUnit.All in untitled.executor": "Run",
+    "JUnit.MainTestAlgoLagAutoCorrelation.testGoldenValues.executor": "Run",
+    "JUnit.MainTestAlgoLagAutoCorrelation.testInvalidLagParameter.executor": "Run",
+    "JUnit.MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess.executor": "Run",
+    "JUnit.MainTestAlgoLagAutoCorrelation.testPrecomputedACF.executor": "Run",
+    "JUnit.MainTestConfidenceBand.executor": "Run",
+    "JUnit.MainTestConfidenceBand.testKnownValues.executor": "Run",
     "JUnit.MainTestCosineDistance.testKnownDistance.executor": "Run",
     "JUnit.MainTestERPDistance.testVerySmallDifferences.executor": "Run",
     "JUnit.MainTestESAX_SingleTimeSeries$SingleTimeSeriesTests.executor": "Run",
@@ -180,9 +188,8 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTestCorrelogramModule">
-    <configuration name="MainTestAlgoLagAutoCorrelation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
+  <component name="RunManager" selected="JUnit.MainTestConfidenceBand">
+    <configuration name="MainTestAlgoLagAutoCorrelation.testGoldenValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -190,25 +197,47 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
+      <option name="METHOD_NAME" value="testGoldenValues" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestAutocorrelation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.MainTestAutocorrelation" />
+    <configuration name="MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
+      <option name="METHOD_NAME" value="testKnownAutoregressiveProcess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestConfidenceBand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.confidenceband.MainTestConfidenceBand" />
+    <configuration name="MainTestAlgoLagAutoCorrelation.testPrecomputedACF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
+      <option name="METHOD_NAME" value="testPrecomputedACF" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTestConfidenceBand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
@@ -216,34 +245,24 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.confidenceband" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.confidenceband.MainTestConfidenceBand" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestCorrelogramModule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.correlogramModule.MainTestCorrelogramModule" />
+    <configuration name="MainTestConfidenceBand.testKnownValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.correlogramModule.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.confidenceband.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTestESAX_SingleTimeSeries.testESAXFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.sax.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax.MainTestESAX_SingleTimeSeries" />
-      <option name="METHOD_NAME" value="testESAXFunctionality" />
+      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.confidenceband" />
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.confidenceband.MainTestConfidenceBand" />
+      <option name="METHOD_NAME" value="testKnownValues" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainTestCorrelogramModule" />
-        <item itemvalue="Application.MainTestConfidenceBand" />
-        <item itemvalue="Application.MainTestAlgoLagAutoCorrelation" />
-        <item itemvalue="Application.MainTestAutocorrelation" />
-        <item itemvalue="JUnit.MainTestESAX_SingleTimeSeries.testESAXFunctionality" />
+        <item itemvalue="JUnit.MainTestConfidenceBand" />
+        <item itemvalue="JUnit.MainTestConfidenceBand.testKnownValues" />
+        <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testGoldenValues" />
+        <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess" />
+        <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testPrecomputedACF" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +302,7 @@
       <workItem from="1755152073829" duration="79134000" />
       <workItem from="1756967735538" duration="9551000" />
       <workItem from="1757051872232" duration="20264000" />
-      <workItem from="1757140798550" duration="6440000" />
+      <workItem from="1757140798550" duration="14640000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -421,7 +440,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757148759319</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adding CorrelogramModule">
+      <option name="closed" value="true" />
+      <created>1757149981829</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1757149981829</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,9 +471,10 @@
     <MESSAGE value="adding Extended SAX" />
     <MESSAGE value="adding Polynomial Regression" />
     <MESSAGE value="adding test for ESAX and PACF" />
-    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
     <MESSAGE value="adding ConfidenceBand implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding ConfidenceBand implementation" />
+    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
+    <MESSAGE value="adding CorrelogramModule" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding CorrelogramModule" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
