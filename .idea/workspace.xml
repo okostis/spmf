@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding MainTestPolynomialRegressionLeastSquare">
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
@@ -20,6 +19,7 @@
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -186,7 +186,20 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTestConfidenceBand">
+  <component name="RunManager" selected="Application.MainTestCosineDistance">
+    <configuration name="MainTestCosineDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.MainTestCosineDistance" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTestAlgoLagAutoCorrelation.testGoldenValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
@@ -214,22 +227,6 @@
       <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
       <option name="METHOD_NAME" value="testKnownAutoregressiveProcess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTestAlgoLagAutoCorrelation.testPrecomputedACF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
-      <option name="METHOD_NAME" value="testPrecomputedACF" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -268,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTestCosineDistance" />
         <item itemvalue="JUnit.MainTestConfidenceBand" />
         <item itemvalue="JUnit.MainTestConfidenceBand.testKnownValues" />
         <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testGoldenValues" />
         <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess" />
-        <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testPrecomputedACF" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +297,9 @@
       <workItem from="1755152073829" duration="79134000" />
       <workItem from="1756967735538" duration="9551000" />
       <workItem from="1757051872232" duration="20264000" />
-      <workItem from="1757140798550" duration="18223000" />
+      <workItem from="1757140798550" duration="20552000" />
+      <workItem from="1757322980114" duration="4923000" />
+      <workItem from="1757593038937" duration="4188000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -462,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757171884287</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="adding DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation to invoke PACF">
+      <option name="closed" value="true" />
+      <created>1757173389444</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1757173389444</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,9 +495,10 @@
     <MESSAGE value="adding ConfidenceBand implementation" />
     <MESSAGE value="adding CorrelogramModule" />
     <MESSAGE value="adding tests for Correlogram + implementation of ConfidenceBand" />
-    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
     <MESSAGE value="adding DescriptionAlgoTimeSeriesCorrelogramModule in order to be able to invoke our Correlogram" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding DescriptionAlgoTimeSeriesCorrelogramModule in order to be able to invoke our Correlogram" />
+    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
+    <MESSAGE value="adding DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation to invoke PACF" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation to invoke PACF" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -610,6 +618,11 @@
           <line>113</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesEuclidianDistance.java</url>
           <line>39</line>
@@ -645,6 +658,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java</url>
+          <line>19</line>
+          <properties class="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.MainTestCosineDistance" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
