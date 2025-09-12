@@ -55,10 +55,19 @@ public class DescriptionAlgoConvertTimeSeriesFileToSequencesWithESAX extends Des
         List<TimeSeries> timeSeries = reader.runAlgorithm(inputFile, separator);
         reader.printStats();
 
+
         // Applying the algorithm
         AlgoConvertTimeSeriesFileToSequencesWithESAX algorithm = new AlgoConvertTimeSeriesFileToSequencesWithESAX();
+
+        long endTimestamp = 0;
+        long startTimestamp = System.currentTimeMillis();
         algorithm.runAlgorithm(timeSeries, outputFile, numberOfSegments, numberOfSymbols);
         algorithm.printStats();
+
+        endTimestamp = System.currentTimeMillis();
+        System.out.println(" Total time for " + timeSeries.size() + "timeseries: " + (endTimestamp - startTimestamp) + " ms");
+
+
     }
 
     @Override

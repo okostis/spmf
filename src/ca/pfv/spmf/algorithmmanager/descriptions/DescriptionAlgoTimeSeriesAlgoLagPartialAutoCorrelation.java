@@ -48,15 +48,13 @@ public class DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation extends Desc
         }
 
 
-        // Get the text encoding
-//		Charset charset = PreferencesManager.getInstance().getPreferedCharset();
-
-        // (1) Read the time series
+        //Read the time series
         AlgoTimeSeriesReader reader = new AlgoTimeSeriesReader();
         List<TimeSeries> multipleTimeSeries = reader.runAlgorithm(inputFile, separator);
 
-
-        // (2) Calculate the exponential smoothing of each time series
+        long endTimestamp = 0;
+        long startTimestamp = System.currentTimeMillis();
+        //  Calculate the exponential smoothing of each time series
         List<TimeSeries> resultMultipleTimeSeries = new ArrayList<TimeSeries>();
         for(TimeSeries timeSeries : multipleTimeSeries){
             AlgoLagPartialAutoCorrelation algorithm = new AlgoLagPartialAutoCorrelation();
@@ -64,8 +62,11 @@ public class DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation extends Desc
             resultMultipleTimeSeries.add(result);
             algorithm.printStats();
         }
+        endTimestamp = System.currentTimeMillis();
+        System.out.println(" Total time for " + multipleTimeSeries.size() + "timeseries: " + (endTimestamp - startTimestamp) + " ms");
 
-        // (3) write the time series to a file
+
+        // write the time series to a file
         AlgoTimeSeriesWriter algorithm2 = new AlgoTimeSeriesWriter();
         algorithm2.runAlgorithm(outputFile, resultMultipleTimeSeries, separator);
         algorithm2.printStats();

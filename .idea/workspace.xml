@@ -19,8 +19,9 @@
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/MainTestManhattanDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/ManhattanDistance/MainTestManhattanDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoConvertTimeSeriesFileToSequencesWithESAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoConvertTimeSeriesFileToSequencesWithESAX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesPolynomialRegressionLeastSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesPolynomialRegressionLeastSquares.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +291,7 @@
       <workItem from="1757140798550" duration="20552000" />
       <workItem from="1757322980114" duration="4923000" />
       <workItem from="1757593038937" duration="4300000" />
-      <workItem from="1757657176554" duration="7118000" />
+      <workItem from="1757657176554" duration="9864000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -500,14 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757663528048</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="changing Manhattan distance tests || removing JUNIT5">
+      <option name="closed" value="true" />
+      <created>1757667084266</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1757667084266</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Addign Description for Cosine Distance and renaming description for DTW Distance" />
     <MESSAGE value="Addign LCSSDistance and some minor fixes" />
     <MESSAGE value="Addign ERPDistance and some minor fixes" />
     <MESSAGE value="minor changes /deleting unused stuff" />
@@ -532,7 +540,8 @@
     <MESSAGE value="changing Euclidian distance tests || removing JUNIT5" />
     <MESSAGE value="changing lcss distance tests || removing JUNIT5" />
     <MESSAGE value="changing cosinedistance tests || removing JUNIT5" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing cosinedistance tests || removing JUNIT5" />
+    <MESSAGE value="changing Manhattan distance tests || removing JUNIT5" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing Manhattan distance tests || removing JUNIT5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

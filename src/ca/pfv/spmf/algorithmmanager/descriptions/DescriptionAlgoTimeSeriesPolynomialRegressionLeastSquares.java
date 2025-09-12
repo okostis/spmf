@@ -67,6 +67,8 @@ public class DescriptionAlgoTimeSeriesPolynomialRegressionLeastSquares extends D
 
         // (2) Calculate the polynomial regression of each time series
         List<TimeSeries> regressionLines = new ArrayList<TimeSeries>();
+        long endTimestamp = 0;
+        long startTimestamp = System.currentTimeMillis();
         for(TimeSeries timeSeries : multipleTimeSeries){
             AlgoTimeSeriesPolynomialRegressionLeastSquare algorithm = new AlgoTimeSeriesPolynomialRegressionLeastSquare();
             algorithm.trainModel(timeSeries, degree);
@@ -74,11 +76,15 @@ public class DescriptionAlgoTimeSeriesPolynomialRegressionLeastSquares extends D
             regressionLines.add(regressionLine);
             algorithm.printStats();
         }
+        endTimestamp = System.currentTimeMillis();
+        System.out.println(" Total time for " + multipleTimeSeries.size() + "timeseries: " + (endTimestamp - startTimestamp) + " ms");
+
 
         // (3) write the time series to a file
         AlgoTimeSeriesWriter algorithm2 = new AlgoTimeSeriesWriter();
         algorithm2.runAlgorithm(outputFile, regressionLines, separator);
         algorithm2.printStats();
+
     }
 
     @Override
