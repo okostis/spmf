@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="adding MainTestPolynomialRegressionLeastSquare">
+    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="changing cosinedistance tests || removing JUNIT5">
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
@@ -19,7 +19,7 @@
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,122 +61,122 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MainTestAlgoLagAutoCorrelation.executor": "Debug",
-    "Application.MainTestAlgorithmManager.executor": "Run",
-    "Application.MainTestAutocorrelation.executor": "Run",
-    "Application.MainTestConfidenceBand.executor": "Run",
-    "Application.MainTestConvertTimeSeriesFileToSequencesWithESAX.executor": "Run",
-    "Application.MainTestConvertTimeSeriesFiletoSequenceFileWithSAX.executor": "Run",
-    "Application.MainTestCorrelogramModule.executor": "Run",
-    "Application.MainTestCosineDistance.executor": "Run",
-    "Application.MainTestDTWDistance.executor": "Run",
-    "Application.MainTestERPDistance.executor": "Run",
-    "Application.MainTestESAX_MultipleTimeSeries.executor": "Run",
-    "Application.MainTestESAX_SingleTimeSeries.executor": "Run",
-    "Application.MainTestEuclidianDistance.executor": "Run",
-    "Application.MainTestEuclidianDistanceFileToFile.executor": "Run",
-    "Application.MainTestFirstOrderDifferencing.executor": "Run",
-    "Application.MainTestFirstOrderDifferencingFileToFile.executor": "Debug",
-    "Application.MainTestJaccardDistance.executor": "Run",
-    "Application.MainTestLCSSDistance.executor": "Run",
-    "Application.MainTestManhattanDistance.executor": "Debug",
-    "Application.MainTestMedianSmoothingFromFileToFile.executor": "Run",
-    "Application.MainTestPolynomialRegressionLeastSquare.executor": "Run",
-    "Application.MainTestSAX_MultipleTimeSeries.executor": "Run",
-    "Application.MainTestSAX_SingleTimeSeries.executor": "Run",
-    "Application.MainTestTimeSeriesLinearRegressionLeastSquaresFromFile.executor": "Debug",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JAR Application.untitled.jar.executor": "Run",
-    "JUnit.AlgoCosineDistanceTest.executor": "Run",
-    "JUnit.AlgoCosineDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
-    "JUnit.AlgoCosineDistanceTest.testKnownDistance.executor": "Run",
-    "JUnit.AlgoCosineDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
-    "JUnit.AlgoCosineDistanceTest.testNullTimeSeriesInput.executor": "Run",
-    "JUnit.AlgoCosineDistanceTest.testVerySmallDifferences.executor": "Run",
-    "JUnit.AlgoDTWDistanceTest.executor": "Run",
-    "JUnit.AlgoDTWDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
-    "JUnit.AlgoDTWDistanceTest.testKnownDistance.executor": "Run",
-    "JUnit.AlgoDTWDistanceTest.testMaxMinValueDistance.executor": "Run",
-    "JUnit.AlgoDTWDistanceTest.testNullTimeSeriesInput.executor": "Run",
-    "JUnit.AlgoDTWDistanceTest.testVerySmallDifferences.executor": "Run",
-    "JUnit.AlgoERPDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
-    "JUnit.AlgoERPDistanceTest.testKnownDistance.executor": "Run",
-    "JUnit.AlgoERPDistanceTest.testVerySmallDifferences.executor": "Run",
-    "JUnit.AlgoEuclidianDistanceTest.executor": "Run",
-    "JUnit.AlgoEuclidianDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
-    "JUnit.AlgoEuclidianDistanceTest.testKnownDistance.executor": "Run",
-    "JUnit.AlgoEuclidianDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
-    "JUnit.AlgoEuclidianDistanceTest.testNegativeValues.executor": "Run",
-    "JUnit.AlgoEuclidianDistanceTest.testVerySmallDifferences.executor": "Run",
-    "JUnit.AlgoLCSSDistanceTest.executor": "Run",
-    "JUnit.AlgoLCSSDistanceTest.testEmptyTimeSeriesInput.executor": "Run",
-    "JUnit.AlgoLCSSDistanceTest.testKnownDistance.executor": "Run",
-    "JUnit.AlgoLCSSDistanceTest.testNegativeValues.executor": "Run",
-    "JUnit.AlgoLCSSDistanceTest.testVerySmallDifferences.executor": "Run",
-    "JUnit.AlgoManhattanDistanceTest.executor": "Run",
-    "JUnit.AlgoManhattanDistanceTest.testDistanceSymmetry.executor": "Run",
-    "JUnit.AlgoManhattanDistanceTest.testKnownUnequalLengthDistance.executor": "Run",
-    "JUnit.AlgoManhattanDistanceTest.testVerySmallDifferences.executor": "Run",
-    "JUnit.All in untitled.executor": "Run",
-    "JUnit.MainTestAlgoLagAutoCorrelation.testGoldenValues.executor": "Run",
-    "JUnit.MainTestAlgoLagAutoCorrelation.testInvalidLagParameter.executor": "Run",
-    "JUnit.MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess.executor": "Run",
-    "JUnit.MainTestAlgoLagAutoCorrelation.testPrecomputedACF.executor": "Run",
-    "JUnit.MainTestConfidenceBand.executor": "Run",
-    "JUnit.MainTestConfidenceBand.testKnownValues.executor": "Run",
-    "JUnit.MainTestCosineDistance.testKnownDistance.executor": "Run",
-    "JUnit.MainTestERPDistance.testVerySmallDifferences.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries$SingleTimeSeriesTests.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries$SymbolTests.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testBreakpointsForThreeSymbols.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testBreakpointsForTwoSymbols.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testESAXCorrectness.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testESAXFunctionality.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testKnownSequence.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testRunAlgorithmSimpleCase.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testSimpleESAXWithKnownOutput.executor": "Run",
-    "JUnit.MainTestESAX_SingleTimeSeries.testTwoSymbolsWithEasyData.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.debugLinearFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testCubicFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFitWithDegree3.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearcFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testNegativeDegree.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testQuadr6aticFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testQuadraticFit.executor": "Run",
-    "JUnit.MainTestPolynomialRegressionLeastSquare.testRandomFit.executor": "Run",
-    "JUnit.ca.pfv.spmf.algorithms.timeseries.distances in untitled.executor": "Run",
-    "JUnit.ca.pfv.spmf.algorithms.timeseries.distances.ManhattanDistance in untitled.executor": "Run",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Aristea/IdeaProjects/spmf/src/ca/pfv/spmf/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestAlgoLagAutoCorrelation.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MainTestAlgorithmManager.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestAutocorrelation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestConfidenceBand.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestConvertTimeSeriesFileToSequencesWithESAX.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestConvertTimeSeriesFiletoSequenceFileWithSAX.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestCorrelogramModule.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestCosineDistance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestDTWDistance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestERPDistance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestESAX_MultipleTimeSeries.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestESAX_SingleTimeSeries.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestEuclidianDistance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestEuclidianDistanceFileToFile.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestFirstOrderDifferencing.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestFirstOrderDifferencingFileToFile.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MainTestJaccardDistance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestLCSSDistance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestManhattanDistance.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MainTestMedianSmoothingFromFileToFile.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestPolynomialRegressionLeastSquare.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestSAX_MultipleTimeSeries.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestSAX_SingleTimeSeries.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTestTimeSeriesLinearRegressionLeastSquaresFromFile.executor&quot;: &quot;Debug&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JAR Application.untitled.jar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoCosineDistanceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoCosineDistanceTest.testEmptyTimeSeriesInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoCosineDistanceTest.testKnownDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoCosineDistanceTest.testKnownUnequalLengthDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoCosineDistanceTest.testNullTimeSeriesInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoCosineDistanceTest.testVerySmallDifferences.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoDTWDistanceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoDTWDistanceTest.testEmptyTimeSeriesInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoDTWDistanceTest.testKnownDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoDTWDistanceTest.testMaxMinValueDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoDTWDistanceTest.testNullTimeSeriesInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoDTWDistanceTest.testVerySmallDifferences.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoERPDistanceTest.testEmptyTimeSeriesInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoERPDistanceTest.testKnownDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoERPDistanceTest.testVerySmallDifferences.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoEuclidianDistanceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoEuclidianDistanceTest.testEmptyTimeSeriesInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoEuclidianDistanceTest.testKnownDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoEuclidianDistanceTest.testKnownUnequalLengthDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoEuclidianDistanceTest.testNegativeValues.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoEuclidianDistanceTest.testVerySmallDifferences.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoLCSSDistanceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoLCSSDistanceTest.testEmptyTimeSeriesInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoLCSSDistanceTest.testKnownDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoLCSSDistanceTest.testNegativeValues.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoLCSSDistanceTest.testVerySmallDifferences.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoManhattanDistanceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoManhattanDistanceTest.testDistanceSymmetry.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoManhattanDistanceTest.testKnownUnequalLengthDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AlgoManhattanDistanceTest.testVerySmallDifferences.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in untitled.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestAlgoLagAutoCorrelation.testGoldenValues.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestAlgoLagAutoCorrelation.testInvalidLagParameter.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestAlgoLagAutoCorrelation.testPrecomputedACF.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestConfidenceBand.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestConfidenceBand.testKnownValues.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestCosineDistance.testKnownDistance.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestERPDistance.testVerySmallDifferences.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries$SingleTimeSeriesTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries$SymbolTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testBreakpointsForThreeSymbols.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testBreakpointsForTwoSymbols.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testESAXCorrectness.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testESAXFunctionality.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testKnownSequence.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testRunAlgorithmSimpleCase.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testSimpleESAXWithKnownOutput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestESAX_SingleTimeSeries.testTwoSymbolsWithEasyData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.debugLinearFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testConstantFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testCubicFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testLinearFitWithDegree3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testLinnearcFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testNegativeDegree.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testQuadr6aticFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testQuadraticFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTestPolynomialRegressionLeastSquare.testRandomFit.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ca.pfv.spmf.algorithms.timeseries.distances in untitled.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ca.pfv.spmf.algorithms.timeseries.distances.ManhattanDistance in untitled.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aristea/IdeaProjects/spmf/src/ca/pfv/spmf/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aristea\IdeaProjects\spmf\src\ca\pfv\spmf\test" />
@@ -186,13 +186,26 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTestCosineDistance">
+  <component name="RunManager" selected="Application.MainTestDTWDistance">
     <configuration name="MainTestCosineDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.MainTestCosineDistance" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTestDTWDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWdistance.MainTestDTWDistance" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWdistance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,22 +224,6 @@
       <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
       <option name="METHOD_NAME" value="testGoldenValues" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
-      <option name="METHOD_NAME" value="testKnownAutoregressiveProcess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -265,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTestDTWDistance" />
         <item itemvalue="Application.MainTestCosineDistance" />
         <item itemvalue="JUnit.MainTestConfidenceBand" />
         <item itemvalue="JUnit.MainTestConfidenceBand.testKnownValues" />
         <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testGoldenValues" />
-        <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testKnownAutoregressiveProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +296,8 @@
       <workItem from="1757051872232" duration="20264000" />
       <workItem from="1757140798550" duration="20552000" />
       <workItem from="1757322980114" duration="4923000" />
-      <workItem from="1757593038937" duration="4188000" />
+      <workItem from="1757593038937" duration="4300000" />
+      <workItem from="1757657176554" duration="794000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -469,7 +467,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757173389444</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="changing cosinedistance tests || removing JUNIT5">
+      <option name="closed" value="true" />
+      <created>1757623682145</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1757623682145</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,9 +502,10 @@
     <MESSAGE value="adding CorrelogramModule" />
     <MESSAGE value="adding tests for Correlogram + implementation of ConfidenceBand" />
     <MESSAGE value="adding DescriptionAlgoTimeSeriesCorrelogramModule in order to be able to invoke our Correlogram" />
-    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
     <MESSAGE value="adding DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation to invoke PACF" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation to invoke PACF" />
+    <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
+    <MESSAGE value="changing cosinedistance tests || removing JUNIT5" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing cosinedistance tests || removing JUNIT5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
