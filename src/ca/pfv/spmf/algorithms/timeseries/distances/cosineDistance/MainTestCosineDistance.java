@@ -1,16 +1,9 @@
 package ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance;
 
 import ca.pfv.spmf.algorithms.timeseries.TimeSeries;
-//import org.junit.jupiter.api.BeforeEach;
-//import org.junit.jupiter.api.Test;
 
-
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
-
-//import static org.junit.jupiter.api.Assertions.*;
-//import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MainTestCosineDistance {
 
