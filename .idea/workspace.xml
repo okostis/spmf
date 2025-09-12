@@ -19,7 +19,7 @@
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/DTWdistance/MainTestDTWDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/erpDistance/MainTestERPDistance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +186,7 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTestDTWDistance">
+  <component name="RunManager" selected="Application.MainTestERPDistance">
     <configuration name="MainTestCosineDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.cosineDistance.MainTestCosineDistance" />
       <module name="untitled" />
@@ -213,18 +213,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestAlgoLagAutoCorrelation.testGoldenValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTestERPDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.erpDistance.MainTestERPDistance" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.erpDistance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation" />
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagAutoCorrelation" />
-      <option name="METHOD_NAME" value="testGoldenValues" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTestERPDistance" />
         <item itemvalue="Application.MainTestDTWDistance" />
         <item itemvalue="Application.MainTestCosineDistance" />
         <item itemvalue="JUnit.MainTestConfidenceBand" />
         <item itemvalue="JUnit.MainTestConfidenceBand.testKnownValues" />
-        <item itemvalue="JUnit.MainTestAlgoLagAutoCorrelation.testGoldenValues" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +294,7 @@
       <workItem from="1757140798550" duration="20552000" />
       <workItem from="1757322980114" duration="4923000" />
       <workItem from="1757593038937" duration="4300000" />
-      <workItem from="1757657176554" duration="794000" />
+      <workItem from="1757657176554" duration="3163000" />
     </task>
     <task id="LOCAL-00001" summary="adding DTWDistance">
       <option name="closed" value="true" />
@@ -475,7 +472,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757623682145</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="changing dtwdistance tests || removing JUNIT5">
+      <option name="closed" value="true" />
+      <created>1757658032690</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1757658032690</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,6 +509,7 @@
     <MESSAGE value="adding DescriptionAlgoTimeSeriesCorrelogramModule in order to be able to invoke our Correlogram" />
     <MESSAGE value="adding DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation to invoke PACF" />
     <MESSAGE value="adding MainTestPolynomialRegressionLeastSquare" />
+    <MESSAGE value="changing dtwdistance tests || removing JUNIT5" />
     <MESSAGE value="changing cosinedistance tests || removing JUNIT5" />
     <option name="LAST_COMMIT_MESSAGE" value="changing cosinedistance tests || removing JUNIT5" />
   </component>
