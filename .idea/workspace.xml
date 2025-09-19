@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="changing cosinedistance tests || removing JUNIT5">
+    <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="changing PACF tests | removing JUNIT5 depndency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/MainTestAlgoLagAutoCorrelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/MainTestAlgoLagPartialAutoCorrelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/MatrixBasedDistanceMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/MatrixBasedDistanceMeasure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/paa/AlgoExtendedPiecewiseAggregateApproximation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/paa/AlgoExtendedPiecewiseAggregateApproximation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/sax/MainTestESAX_SingleTimeSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/sax/MainTestESAX_SingleTimeSeries.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +178,7 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTestAlgoLagPartialAutoCorrelation">
+  <component name="RunManager" selected="Application.MainTestESAX_SingleTimeSeries">
     <configuration name="MainTestAlgoLagPartialAutoCorrelation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagPartialAutoCorrelation" />
       <module name="untitled" />
@@ -195,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTestERPDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.erpDistance.MainTestERPDistance" />
+    <configuration name="MainTestESAX_SingleTimeSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.sax.MainTestESAX_SingleTimeSeries" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.erpDistance.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.sax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTestESAX_SingleTimeSeries" />
         <item itemvalue="Application.MainTestAlgoLagPartialAutoCorrelation" />
         <item itemvalue="Application.MainTestManhattanDistance" />
         <item itemvalue="Application.MainTestLCSSDistance" />
         <item itemvalue="Application.MainTestEuclidianDistance" />
-        <item itemvalue="Application.MainTestERPDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -502,14 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1757667084266</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="changing PACF tests | removing JUNIT5 depndency">
+      <option name="closed" value="true" />
+      <created>1758266742395</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1758266742410</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Addign LCSSDistance and some minor fixes" />
     <MESSAGE value="Addign ERPDistance and some minor fixes" />
     <MESSAGE value="minor changes /deleting unused stuff" />
     <MESSAGE value="added kind credits disclaimer" />
@@ -534,7 +538,8 @@
     <MESSAGE value="changing lcss distance tests || removing JUNIT5" />
     <MESSAGE value="changing cosinedistance tests || removing JUNIT5" />
     <MESSAGE value="changing Manhattan distance tests || removing JUNIT5" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing Manhattan distance tests || removing JUNIT5" />
+    <MESSAGE value="changing PACF tests | removing JUNIT5 depndency" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing PACF tests | removing JUNIT5 depndency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
