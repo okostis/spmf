@@ -12,7 +12,7 @@ import java.util.Arrays;
  * <p>
  * Contributors: goastler
  */
-public abstract class MatrixBasedDistanceMeasure /*extends BaseDistanceMeasure*/ {
+public abstract class MatrixBasedDistanceMeasure {
 
     private boolean recordCostMatrix = false;
     // the distance matrix produced by the distance function
@@ -23,7 +23,7 @@ public abstract class MatrixBasedDistanceMeasure /*extends BaseDistanceMeasure*/
     private boolean recycleRows;
 
     /**
-     * Indicate that a new distance is being computed and a corresponding matrix or pair or rows are required
+         * Indicate that a new distance is being computed and a corresponding matrix or pair or rows are required
      * @param numRows
      * @param numCols
      */

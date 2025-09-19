@@ -119,14 +119,13 @@ public class AlgoLagPartialAutoCorrelation {
 
         for (int k = 1; k < p; k++) {
             // Find diagonal k,k
-            // Naive implementation, should be able to do with running sums?
             numerator = acf[k];
             for (int i = 0; i < k; i++)
                 numerator -= phi[i][k - 1] * acf[k - 1 - i];
             denominator = 1;
             for (int i = 0; i < k; i++)
                 denominator -= phi[k - 1 - i][k - 1] * acf[k - 1 - i];
-            if (denominator != 0)// What to do otherwise?
+            if (denominator != 0)
                 phi[k][k] = numerator / denominator;
             // Find terms 1 to k-1
             for (int i = 0; i < k; i++)

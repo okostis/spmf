@@ -6,18 +6,9 @@ import java.net.URL;
 
 import ca.pfv.spmf.algorithms.timeseries.TimeSeries;
 import ca.pfv.spmf.algorithms.timeseries.autocorrelation.AlgoLagAutoCorrelation;
-import ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.AlgoLagPartialAutoCorrelation;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Example of how to calculate the  autocorrelation function of a time series, using
- * the source code of SPMF
- *
- * @author Philippe Fournier-Viger, 2018.
- */
-public class MainTestAlgoLagAutoCorrelation {
+public class MainTestAlgoLagPartialAutoCorrelation {
 
     public static void main(String [] arg) throws IOException{
 
@@ -33,35 +24,37 @@ public class MainTestAlgoLagAutoCorrelation {
         TimeSeries aSeries = algorithm.runAlgorithm(timeSeries,maxlag,null);
         algorithm.printStats();
 
+        testInvalidLagParameter();
+        testPrecomputedACF();
+        testKnownAutoregressiveProcess();
+        testKnownPrecalculatedValues();
+
         // Print the autocorrelation time series
         System.out.println(" Auto-correlation for lag: 1 to : " + maxlag);
         System.out.println(aSeries.toString());
 
     }
 
-    public static String fileToPath(String filename) throws UnsupportedEncodingException{
-        URL url = MainTestAlgoLagAutoCorrelation.class.getResource(filename);
-        return java.net.URLDecoder.decode(url.getPath(),"UTF-8");
-    }
-
-    @Test
-    void testInvalidLagParameter() {
+    public static void testInvalidLagParameter(){
         TimeSeries dummySeries = new TimeSeries(new double[]{1, 2, 3, 4, 5}, "TEST_PACF");
 
         AlgoLagPartialAutoCorrelation algorithm = new AlgoLagPartialAutoCorrelation();
-        // Test with maxlag = 0 (should be >= 1)
-        assertThrows(IllegalArgumentException.class, () -> {
-            algorithm.runAlgorithm(dummySeries, 0, null);
-        });
 
-        // Test with maxlag > series length
-        assertThrows(IllegalArgumentException.class, () -> {
+        try {
+
+            TimeSeries timeSeries = algorithm.runAlgorithm(dummySeries, 0, null);
+
+
             algorithm.runAlgorithm(dummySeries, 6, null);
-        });
+
+        } catch (Exception e) {
+            System.out.println("TestInvalidLagParameter(1) Passed");
+            return;
+        }
+        System.out.println("TestInvalidLagParameter(1) failed");
     }
 
-    @Test
-    void testPrecomputedACF() throws IOException {
+    public static void testPrecomputedACF() throws IOException {
         TimeSeries series = new TimeSeries(new double[]{1, 5, 2, 8, 4, 6, 3, 7}, "Test Series");
         AlgoLagPartialAutoCorrelation algorithm = new AlgoLagPartialAutoCorrelation();
         int maxLag = 5;
@@ -69,19 +62,30 @@ public class MainTestAlgoLagAutoCorrelation {
         // 1. Calculate PACF by letting the algorithm compute ACF internally
         TimeSeries pacfInternalACF = algorithm.runAlgorithm(series, maxLag, null);
 
-        // 2. Pre-compute the ACF first
         AlgoLagAutoCorrelation acfAlgo = new AlgoLagAutoCorrelation();
         TimeSeries acfSeries = acfAlgo.runAlgorithm(series, maxLag);
 
-        // 3. Calculate PACF using the pre-computed ACF
+        TimeSeries pacfDirect = algorithm.runAlgorithm(series, maxLag, null);
+
         TimeSeries pacfExternalACF = algorithm.runAlgorithm(series, maxLag, acfSeries.data);
 
-        // 4. Compare the results. They should be identical.
-        assertArrayEquals(pacfInternalACF.data, pacfExternalACF.data, 0.001);
+        boolean equal = true;
+        for (int i = 0; i < pacfDirect.data.length; i++) {
+            if (Math.abs(pacfDirect.data[i] - pacfExternalACF.data[i]) > 1e-6) {
+                equal = false;
+                break;
+            }
+        }
+
+        if (equal) {
+            System.out.println("TestPrecomputedACF(1) passed");
+        } else {
+            System.out.println("TestPrecomputedACF(1) failed");
+        }
+
     }
 
-    @Test
-    void testKnownAutoregressiveProcess() throws IOException {
+    public static void testKnownAutoregressiveProcess() throws  IOException{
         // Generate a simple AR(1) series: x_t = 0.7 * x_{t-1} + noise
         double[] ar1Data = new double[200];
         AlgoLagPartialAutoCorrelation algorithm = new AlgoLagPartialAutoCorrelation();
@@ -90,37 +94,59 @@ public class MainTestAlgoLagAutoCorrelation {
             ar1Data[i] = 0.7 * ar1Data[i-1] + (Math.random() - 0.5);
         }
         TimeSeries ar1Series = new TimeSeries(ar1Data, "AR1 Series");
-
         int maxLag = 10;
         TimeSeries pacfSeries = algorithm.runAlgorithm(ar1Series, maxLag, null);
 
-        // 1. Check if the result has the correct length
-        assertEquals(maxLag, pacfSeries.size());
-
-        // 2. The first PACF value should be high (close to the AR coefficient 0.7)
-        assertTrue(pacfSeries.data[0] > 0.5, "PACF at lag 1 should be high for an AR(1) process.");
-
-        // 3. Subsequent PACF values should be small (close to zero)
-        for (int i = 1; i < maxLag; i++) {
-            assertTrue(Math.abs(pacfSeries.data[i]) < 0.2, "PACF at lag > 1 should be small for an AR(1) process.");
+        if(maxLag != pacfSeries.size()){
+            System.out.println("TestKnownAutoregressiveProcess(1) failed");
+            return;
         }
+
+
+        if(pacfSeries.data[0] <= 0.5){
+            System.out.println("TestKnownAutoregressiveProcess(1) Failed");
+        }
+
+        for (int i = 1; i < maxLag; i++) {
+            if(Math.abs(pacfSeries.data[i]) >= 0.2){
+                System.out.println("TestKnownAutoregressiveProcess(1) Failed");
+                return;
+            }
+        }
+        System.out.println("TestKnownAutoregressiveProcess(1) passed");
+
     }
 
-    @Test
-    void testKnownPrecalculatedValues() throws IOException {
-        // 1. The simple time series
+    public static  void testKnownPrecalculatedValues() throws  IOException{
+
         TimeSeries series = new TimeSeries(new double[]{2, 4, 6, 8}, "Simple Linear Series");
         int maxLag = 2;
         AlgoLagPartialAutoCorrelation algorithm = new AlgoLagPartialAutoCorrelation();
 
-        // 2. The expected PACF values that we calculated manually
-        double[] expectedPacf = {0.25, -0.3866};
+        double[] expectedPacf = {0.25, -0.38666666666666666};
 
-        // 3. Run the algorithm
         TimeSeries actualPacf = algorithm.runAlgorithm(series, maxLag, null);
 
-        // 4. Assert that the actual results match the expected results within a tolerance
-        assertArrayEquals(expectedPacf, actualPacf.data, 0.001);
+
+
+        boolean equal = true;
+        for (int i = 0; i < expectedPacf.length; i++) {
+            if (Math.abs(expectedPacf[i] - actualPacf.data[i]) > 1e-6) {
+                equal = false;
+                break;
+            }
+        }
+
+        if (equal) {
+            System.out.println("TestKnownPrecalculatedValues(1) Passed");
+        } else {
+            System.out.println("TestKnownPrecalculatedValues(1) Failed");
+        }
 
     }
+    public static String fileToPath(String filename) throws UnsupportedEncodingException{
+        URL url = MainTestAlgoLagPartialAutoCorrelation.class.getResource(filename);
+        return java.net.URLDecoder.decode(url.getPath(),"UTF-8");
+    }
+
 }

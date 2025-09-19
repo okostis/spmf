@@ -15,7 +15,7 @@ import ca.pfv.spmf.tools.MemoryLogger;
  */
 public class AlgoExtendedPiecewiseAggregateApproximation {
 
-    /** Structure to store mean, min, max, and positions for a segment */
+    /* Structure to store mean, min, max, and positions for a segment */
     public static class SegmentStats {
         public double mean;
         public double min;

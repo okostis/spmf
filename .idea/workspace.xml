@@ -10,18 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9fa57e-57fc-4ab0-a7f8-fa330038580a" name="Changes" comment="changing cosinedistance tests || removing JUNIT5">
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries100000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries1000000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/test/timeseries10000000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoConvertTimeSeriesFileToSequencesWithESAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoConvertTimeSeriesFileToSequencesWithESAX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesAlgoLagPartialAutoCorrelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesPolynomialRegressionLeastSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesPolynomialRegressionLeastSquares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/MainTestAlgoLagAutoCorrelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/MainTestAlgoLagPartialAutoCorrelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/MatrixBasedDistanceMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/MatrixBasedDistanceMeasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/paa/AlgoExtendedPiecewiseAggregateApproximation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/paa/AlgoExtendedPiecewiseAggregateApproximation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +51,6 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2wWqR3xIIHp48GRhPqykfSGuyaC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,7 +58,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "Application.MainTestAlgoLagAutoCorrelation.executor": "Debug",
+    "Application.MainTestAlgoLagAutoCorrelation.executor": "Run",
+    "Application.MainTestAlgoLagPartialAutoCorrelation.executor": "Run",
     "Application.MainTestAlgorithmManager.executor": "Run",
     "Application.MainTestAutocorrelation.executor": "Run",
     "Application.MainTestConfidenceBand.executor": "Run",
@@ -188,13 +181,13 @@
       <recent name="C:\Users\Kostis Evangelou\Downloads\test2\untitled\src\ca\pfv\spmf\algorithms\timeseries" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainTestManhattanDistance">
-    <configuration name="MainTestDTWDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWdistance.MainTestDTWDistance" />
+  <component name="RunManager" selected="Application.MainTestAlgoLagPartialAutoCorrelation">
+    <configuration name="MainTestAlgoLagPartialAutoCorrelation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.MainTestAlgoLagPartialAutoCorrelation" />
       <module name="untitled" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.distances.DTWdistance.*" />
+          <option name="PATTERN" value="ca.pfv.spmf.algorithms.timeseries.autocorrelation.partialautocorrelation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -256,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTestAlgoLagPartialAutoCorrelation" />
         <item itemvalue="Application.MainTestManhattanDistance" />
         <item itemvalue="Application.MainTestLCSSDistance" />
         <item itemvalue="Application.MainTestEuclidianDistance" />
         <item itemvalue="Application.MainTestERPDistance" />
-        <item itemvalue="Application.MainTestDTWDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -630,26 +623,6 @@
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithmmanager/descriptions/DescriptionAlgoTimeSeriesLinearRegressionLeastSquares.java</url>
           <line>79</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/autocorrelation/partialautocorrelation/AlgoLagPartialAutoCorrelation.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/ca/pfv/spmf/algorithms/timeseries/distances/cosineDistance/MainTestCosineDistance.java</url>
